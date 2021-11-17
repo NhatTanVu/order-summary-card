@@ -103,7 +103,7 @@
         body.flex {
             flex-direction: column;
             justify-content: flex-start; /* Can set to center if we need to center the card */
-            padding: 4rem 1.5rem;
+            padding: 3rem 1.5rem;
             background-color: rgb(224 232 255);
             background-image: url('./images/pattern-background-desktop.svg');
             background-repeat: no-repeat;
@@ -114,6 +114,7 @@
         @media(max-width: 25em) {
             body.flex {
                 background-image: url('./images/pattern-background-mobile.svg');
+                padding: 1rem 1.5rem;
             }
         }
 
@@ -132,8 +133,7 @@
         }
 
             main.flex > img {
-                flex: 0;
-                object-fit: contain;
+                width: 100%;
                 border-top-left-radius: 0.625rem;
                 border-top-right-radius: 0.625rem;
             }
@@ -157,13 +157,12 @@
         }
 
         main.flex > div.flex > p {
-            line-height: 1.5rem;
             padding: 0 1.5rem;
         }
 
         @media(max-width: 25em) {
             main.flex > div.flex > p {
-                padding: 0.5rem 1.5rem;
+                padding: 0;
             }
         }
 
@@ -173,6 +172,7 @@
             background-color: rgb(248 249 254);
             padding: 1rem;
             border-radius: 0.3125rem;
+            --gap: min(5%, 1rem);
         }
 
             main.flex > div.flex > div.plan > div.plan-details {
@@ -180,6 +180,16 @@
                 --gap: 0;
                 text-align: left;
             }
+
+                main.flex > div.flex > div.plan > div.plan-details > p.plan-name {
+                    font-weight: 600;
+                    color: rgb(30 42 80);
+                }
+
+        main.flex > div.flex > div.buttons {
+            flex-direction: column;
+            --gap: 0;
+        }
     </style>
 </head>
 <body class="flex container">
@@ -187,24 +197,26 @@
         <img src="./images/illustration-hero.svg" />
         <div class="flex">
             <h2>Order Summary</h2>
-            <p style="">
+            <p>
                 You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
             </p>
             <div class="flex plan">
                 <img src="./images/icon-music.svg" style="flex: 0" />
                 <div class="flex plan-details" style="flex: 1">
-                    <p style="font-weight: 600; color: rgb(30 42 80); ">Annual Plan</p>
+                    <p class="plan-name">Annual Plan</p>
                     <p>$59.99/year</p>
                 </div>
                 <a href="#" style="flex: 0">Change</a>
             </div>
-            <button class="primary">Proceed to Payment</button>
-            <button>Cancel Order</button>
+            <div class="flex buttons">
+                <button class="primary">Proceed to Payment</button>
+                <button>Cancel Order</button>
+            </div>
         </div>
     </main>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Nhat Tan Vu</a>.
+        Coded by <a href="https://github.com/NhatTanVu/Frontend-Mentor-Projects/tree/main/Order%20summary%20component" target="_blank">Nhat Tan Vu</a>.
     </div>
 </body>
 </html>
