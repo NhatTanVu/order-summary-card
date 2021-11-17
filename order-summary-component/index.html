@@ -86,9 +86,13 @@
             border: none;
             background: none;
             cursor: pointer;
-            color: rgb(30 42 80);
+            color: rgb(108 113 143);
             font-weight: 600;
         }
+
+            button:hover, button:focus {
+                color: rgb(33, 43, 68);
+            }
 
             button.primary {
                 border-radius: 0.3125rem;
@@ -96,6 +100,11 @@
                 color: rgb(255, 255, 255);
             }
 
+                button.primary:hover, button.primary:focus {
+                    color: rgb(255, 255, 255);
+                    background-color: rgb(118 108 241);
+                }
+            
         /* ------------------- */
         /* Home page classes   */
         /* ------------------- */
@@ -185,6 +194,15 @@
                     font-weight: 600;
                     color: rgb(30 42 80);
                 }
+
+                main.flex > div.flex > div.plan > a {
+                    font-weight: 600;
+                }
+
+                    main.flex > div.flex > div.plan > a:hover, main.flex > div.flex > div.plan > a:focus {
+                        text-decoration: none;
+                        color: rgb(119 113 199);
+                    }
 
         main.flex > div.flex > div.buttons {
             flex-direction: column;
