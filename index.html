@@ -127,6 +127,7 @@
             body.flex {
                 background-image: url('./images/pattern-background-mobile.svg');
                 padding: 2rem 1.5rem;
+                font-size: 0.8rem;
             }
         }
 
@@ -174,7 +175,7 @@
 
         @media(max-width: 25em) {
             main.flex > div.flex > p {
-                padding: 0;
+                padding: 0 1rem;
             }
         }
 
@@ -187,26 +188,32 @@
             --gap: min(5%, 1rem);
         }
 
-            main.flex > div.flex > div.plan > div.plan-details {
-                flex-direction: column;
-                text-align: left;
-                --gap: 0.25rem;
+        @media(max-width: 25em) {
+            main.flex > div.flex > div.plan {
+                padding: 1rem;
             }
+        }
 
-                main.flex > div.flex > div.plan > div.plan-details > p.plan-name {
-                    font-weight: 900;
-                    color: rgb(30 42 80);
-                }
+        main.flex > div.flex > div.plan > div.plan-details {
+            flex-direction: column;
+            text-align: left;
+            --gap: 0.25rem;
+        }
 
-            main.flex > div.flex > div.plan > a {
+            main.flex > div.flex > div.plan > div.plan-details > p.plan-name {
                 font-weight: 900;
-				color: rgb(62 51 179);
+                color: rgb(30 42 80);
             }
 
-                main.flex > div.flex > div.plan > a:hover, main.flex > div.flex > div.plan > a:focus {
-                    text-decoration: none;
-                    color: rgb(119 113 199);
-                }
+        main.flex > div.flex > div.plan > a {
+            font-weight: 900;
+            color: rgb(62 51 179);
+        }
+
+            main.flex > div.flex > div.plan > a:hover, main.flex > div.flex > div.plan > a:focus {
+                text-decoration: none;
+                color: rgb(119 113 199);
+            }
 
         main.flex > div.flex > div.buttons {
             flex-direction: column;
@@ -223,7 +230,7 @@
                 You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
             </p>
             <div class="flex plan">
-                <img src="./images/icon-music.svg"  alt="Icon Music" style="flex: 0" />
+                <img src="./images/icon-music.svg" alt="Icon Music" style="flex: 0" />
                 <div class="flex plan-details" style="flex: 1">
                     <p class="plan-name">Annual Plan</p>
                     <p>$59.99/year</p>
