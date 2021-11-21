@@ -74,14 +74,14 @@
             }
 
         .container {
-            padding-inline: 2em;
-            margin-inline: auto;
+            padding: 2em;
+            margin: auto;
             max-width: 30rem;
         }
 
         .flex {
             display: flex;
-            gap: var(--gap, 1rem);
+            gap: var(--gap, 1.5rem);
         }
 
         button {
@@ -216,14 +216,14 @@
 </head>
 <body class="flex container">
     <main class="flex">
-        <img src="./images/illustration-hero.svg" />
+        <img src="./images/illustration-hero.svg" alt="Illustration Hero" />
         <div class="flex">
             <h2>Order Summary</h2>
             <p>
                 You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
             </p>
             <div class="flex plan">
-                <img src="./images/icon-music.svg" style="flex: 0" />
+                <img src="./images/icon-music.svg"  alt="Icon Music" style="flex: 0" />
                 <div class="flex plan-details" style="flex: 1">
                     <p class="plan-name">Annual Plan</p>
                     <p>$59.99/year</p>
