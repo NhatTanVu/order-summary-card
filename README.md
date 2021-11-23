@@ -2,6 +2,10 @@
 
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
+## Preview Site
+
+https://nhattanvu.github.io/order-summary-card/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
