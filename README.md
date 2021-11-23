@@ -1,6 +1,6 @@
 # Frontend Mentor - Order summary card
 
-<a href="https://nhattanvu.github.io/order-summary-card/" target="_blank"><kbd><img src="./design/desktop-preview.jpg" alt="Design preview for the Order summary card coding challenge" /></kbd></a>
+<a href="https://nhattanvu.github.io/order-summary-card/" target="_blank"><kbd><img src="./design/desktop-preview.jpg" alt="Order summary card coding challenge" /></kbd></a>
 
 ## Preview Site
 
